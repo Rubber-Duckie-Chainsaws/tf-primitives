@@ -1,10 +1,10 @@
 variable "name" {
-  type        = "string"
+  type        = string
   description = "The short name for the policy"
 }
 
 variable "description" {
-  type        = "string"
+  type        = string
   description = "The short description for what the policy does"
 }
 
@@ -19,7 +19,7 @@ variable "job_id" {
 }
 
 variable "namespace" {
-  type        = "string"
+  type        = string
   default     = "default"
   description = "The namespace that the ACL should apply too"
 }
