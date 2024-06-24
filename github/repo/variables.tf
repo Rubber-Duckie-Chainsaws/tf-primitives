@@ -10,7 +10,7 @@ variable "visibility" {
   default = "private"
 
   validation {
-    contition = contains(["public", "private", "internal"], var.visibility)
+    condition = contains(["public", "private", "internal"], var.visibility)
     error_message = "Must be public, private, or internal (for enterprise)"
   }
 }
