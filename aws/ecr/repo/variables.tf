@@ -11,6 +11,11 @@ variable "image_tag_mutability" {
   }
 }
 
+variable "policy" {
+  default = ""
+  description = "Lifecycle policy to apply to ecr repo"
+}
+
 variable "tags" {
   default = {}
   description = "Tags to add to ecr repo"
