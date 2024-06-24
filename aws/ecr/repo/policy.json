@@ -1,0 +1,16 @@
+{
+  "rules": [
+    {
+      "rulePriority": 1,
+      "description": "Keep only the most recent 8",
+      "selection": {
+        "tagStatus": "tagged",
+        "countType": "imageCountMoreThan",
+        "countNumber": 8
+      },
+      "action": {
+        "type": "expire"
+      }
+    }
+  ]
+}
