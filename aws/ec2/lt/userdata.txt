@@ -1,9 +1,6 @@
 #cloud-config
 
 runcmd:
- - [ sh, -c, "aws s3 cp s3://rdc-dev/keys/consul-agent-ca.pem /etc/tls" ]
- - [ sh, -c, "aws s3 cp s3://rdc-dev/keys/aws-NYC-1-client-consul-0.pem /etc/tls" ]
- - [ sh, -c, "aws s3 cp s3://rdc-dev/keys/aws-NYC-1-client-consul-0-key.pem /etc/tls" ]
- - systemctl enable consul
- - systemctl start consul
+ - systemctl enable --now vault
+ - systemctl enable --now consul
  - systemctl restart nomad
